@@ -320,58 +320,103 @@ textarea {
   background: red;
 }
 /* core */
-.width {
-  width: 70%;
-}
-div{
-  color: #333333
+.width div{
+  color: #333333 !important;
+  font-weight: bold !important;
 }
 @media (max-width: 767px) {
   .width {
     width: 100%;
   }
+  .mobile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 !important;
+    max-height: 260px
+  }
+  .core {
+    min-height: 240px;
+    margin: 10px
+  }
+  .spec {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    text-indent: 20%;
+    
+  }
+  .spec:nth-last-child(n+3){
+    border-bottom: 1px solid #dddddd85;
+  }
+  .spec:nth-child(even){
+    border-right: 1px solid #dddddd85;
+  }
+  
+  .rest-of-specs{
+    min-height: calc(100vh - 240px - 20px);
+  }
+  .core-specs{
+    margin-bottom: 0 !important
+  }
+  .core-specs .core-one,
+  .core-specs .core-two,
+  .core-specs .core-three,
+  .core-specs .core-four {
+    text-align: right;
+  }
+  .mobile-photo img {
+    max-width: 100%;
+    max-height: 240px
+  
+  }
+  .width p {
+    font-weight: normal !important;
+    color: #383d41;
+    margin-bottom: 1rem !important
+  }
+  .container .row {
+    font-weight: bold;
+  }
+  .min-height {
+    height: 100%;
+  }
+  .main-core{
+    min-height: 100vh
+  }
+  .spec:hover, .core-one:hover, .core-two:hover, .core-three:hover, .core-four:hover {
+    background-color: #fafafa;
+  }
 }
-.mobile-photo {
+.main-core .core .mobile-photo{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.core {
-  max-height: 40vh;
-  margin: 10px
-}
-.spec {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: right;
-  text-indent: 20%;
-}
-.rest-of-specs{
-  min-height: 55vh;
-}
-.core-specs li {
-}
-.core-specs .core-one,
-.core-specs .core-two,
-.core-specs .core-three {
-  text-align: right;
-}
-.mobile-photo img {
-  height: 30vh;
-}
-p {
-  font-weight: normal;
+/* the design for the pc */
+.width p {
+  font-weight: normal !important;
   color: #383d41;
+  margin-bottom: 1rem !important
 }
-.container .row {
-  font-weight: bold;
+.spec:hover, .core-one:hover, .core-two:hover, .core-three:hover, .core-four:hover {
+  background-color: #fafafa;
+  border-radius: 5px;
 }
-.min-height {
-  height: 100%;
+
+/* adding the ripple effect to the elements */
+*[data-animation="ripple"] {
+	-webkit-tap-highlight-color: transparent;
 }
-.main-core{
-  min-height: 100vh
+
+*[data-animation="ripple"]:focus {
+	outline: none;
+}
+
+*[data-animation="ripple"]::selection {
+	background: transparent;
+	pointer-events: none;
 }

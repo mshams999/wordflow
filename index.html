@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="swiper-master/package/css/swiper.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -336,8 +337,8 @@
     -->
     <!-- 
     <hr />
--->
-    <!-- Swiper 
+
+    
     <div class="container">
       <div class="row contain">
         <div class="swiper-container">
@@ -353,27 +354,26 @@
             <div class="swiper-slide">Slide 9</div>
             <div class="swiper-slide">Slide 10</div>
           </div>
-
-          -->
-
-    <!-- 
           <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
 
-    -->
+    
+-->
 
     <!-- Add Pagination -->
 
     <!-- core -->
+
+    <!-- 
     <div class="width">
       <div class="container">
         <div class="row main-core">
           <div class="col-sm-12 col-md-6 core">
             <div class="row">
               <div class="col-6 mobile-photo">
-                <img src="img/1.jpg" alt="" />
+                <img src="http://localhost/wordpress/wp-content/uploads/2019/10/xiaomi-redmi-note-8-pro-2.jpg" alt="" />
               </div>
               <div class="col core-specs">
                 <div class="row">
@@ -437,14 +437,59 @@
         </div>
       </div>
     </div>
-
+-->
 
     <!-- adding the ripple effect to the elements -->
 
+    <!-- tap panes -->
 
-
-
-
+    <!-- 
+<div class="container">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-home" aria-selected="true">المراجعة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-specs" role="tab" aria-controls="pills-profile" aria-selected="false">امكانيات الموبايل</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-images" role="tab" aria-controls="pills-contact" aria-selected="false">الصور</a>
+        </li>
+      </ul>
+  
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-review" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row">
+              <h2>فتح العلبة</h2> 
+              <p></p>
+              <img src="" alt="">
+              <h2>التصميم</h2>
+              <p></p>
+              <img src="" alt="">
+              <h2>الشاشة</h2>
+              <p></p>
+              <img src="" alt="">
+              <h2>الأداء والسوفت وير</h2>
+              <p></p>
+              <img src="" alt="">
+              <h2>الكاميرات والتصوير</h2>
+              <p></p>
+              <img src="" alt="">
+              <h2>المميزات والعيوب</h2>
+          </div>
+        
+  
+        </div>
+        <div class="tab-pane fade" id="pills-specs" role="tabpanel" aria-labelledby="pills-profile-tab">امكانيات الموبايل</div>
+        <div class="tab-pane fade" id="pills-images" role="tabpanel" aria-labelledby="pills-contact-tab">
+  
+  
+        </div>
+      </div>
+  
+</div>
+    
+    -->
 
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
     <script
@@ -477,12 +522,10 @@
     <script src="https://www.google-analytics.com/analytics.js" async></script>
     <script>
       var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
+        autoHeight: true, //enable auto height
         pagination: {
           el: ".swiper-pagination",
-          clickable: true
+          dynamicBullets: true
         }
       });
     </script>

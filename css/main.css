@@ -17,7 +17,6 @@ html {
   line-height: 1.4;
   direction: rtl;
 }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -27,7 +26,6 @@ html {
  *
  * Customize the background color to match your design.
  */
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -46,7 +44,6 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -448,4 +445,51 @@ textarea {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+/* about-us page */
+.about-us .background {
+  background-image: url(../img/back.jpg);
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 0;
+}
+.about-us .background .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #35353573;
+  opacity: 0.5;
+  display: block;
+  z-index: 2;
+}
+.about-us .background h1 {
+  color: white;
+  text-align: center;
+  display: block;
+  z-index: 4;
+  position: absolute;
+  top: 10%;
+  right: 25%;
+}
+.container h3 {
+  color: red;
+  font-size: 20px;
+}
+.container .new {
+  text-align: center;
+  font-size: 40px;
+}
+.lead {
+}
+.backcolor {
+  background: #fafafa;
+}
+.container hr {
+  background-color: red;
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 40% !important;
+  margin-right: 40% !important;
 }
